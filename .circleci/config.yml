@@ -13,13 +13,13 @@ jobs:
             - image: circleci/python:3.8.6-buster
 
         steps:
-            - Install dependens
-
             - run:
+                name: Install Dependencias
                 command: |
                      pip install --no-cache-dir -r requirements.txt
 
             - run:
+                name: Teste Google 
                 command: |
                      curl https://www.google.com.br
            
