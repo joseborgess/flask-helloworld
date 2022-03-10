@@ -29,10 +29,11 @@ jobs:
             - run:
                 name: Run Sonarscanner
                 command: |
+                    ls -la
                     export SONAR_SCANNER_OPTS="-Xmx2048m"
-                    eval ./sonar-scanner-cli-4.7.0.2747-linux/bin/sonar-scanner -Dsonar.host.url=http://ec2-44-197-118-108.compute-1.amazonaws.com:9000/ \
-                    -Dsonar.sources=. \
-                    -Dsonar.login=6e15012a942a49d60652e1cc8d9a8ec1abb28ca2
+                    #eval ./sonar-scanner-cli-4.7.0.2747-linux/bin/sonar-scanner -Dsonar.host.url=http://ec2-44-197-118-108.compute-1.amazonaws.com:9000/ \
+                   # -Dsonar.sources=. \
+                    #-Dsonar.login=6e15012a942a49d60652e1cc8d9a8ec1abb28ca2
 
                 
            
