@@ -13,6 +13,7 @@ jobs:
             - image: circleci/python:3.8.6-buster
 
         steps:
+            - checkout
             - run:
                 name: Install Dependencias
                 command: |
